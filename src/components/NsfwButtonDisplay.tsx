@@ -18,10 +18,10 @@ function ButtonDisplay() {
         console.log("sfw:" + savedSFW);
         console.log("nsfw:" + savedNSFW);
         if (savedSFW) {
-            setSFWHistory("History: \n" + JSON.parse(savedSFW));
+            setSFWHistory("SFW History: \n" + JSON.parse(savedSFW));
         }
         if (savedNSFW) {
-            setNSFWHistory("History: \n" + JSON.parse(savedNSFW));
+            setNSFWHistory("NSFW History: \n" + JSON.parse(savedNSFW));
 
         }
     }, []);
@@ -82,9 +82,9 @@ function ButtonDisplay() {
 
             <div className={"bottom-button-container"}>
                 {isHistoryChecked && (
-                    <ClearLocalStorageButton file="sfw" onClear={() => setSFWHistory("History: \n")}/>)}
+                    <ClearLocalStorageButton file="sfw" onClear={() => setSFWHistory("SFW History: \n")}/>)}
                 {isNSFWChecked && isHistoryChecked && (
-                    <ClearLocalStorageButton file="nsfw" onClear={() => setNSFWHistory("History: \n")}/>)}
+                    <ClearLocalStorageButton file="nsfw" onClear={() => setNSFWHistory("NSFW History: \n")}/>)}
                 <div className={"bottom-label-container"}>
                     <label className="bottom-label">
                         <input

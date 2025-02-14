@@ -1,10 +1,8 @@
-import {useState} from 'react'
 import './App.css'
 import ButtonDisplay from "./components/NsfwButtonDisplay.tsx";
 import {ToastContainer} from "react-toastify";
 
 function App() {
-    const [] = useState(0)
 
 
     return (
@@ -16,7 +14,9 @@ function App() {
 
                 <ButtonDisplay/>
                 <p className="footer">
-                    Made possible with attention bender's free 10k list of subreddits
+                    Made possible with attention bender's free 10k list of subreddits.<br></br>
+                    The randomized subreddits may be abandoned overtime, please contact me at jackma4066@gmail.com for me to remove them from the list.
+
                 </p>
             </div>
         </>

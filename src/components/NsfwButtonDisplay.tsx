@@ -6,8 +6,8 @@ import ClearLocalStorageButton from './ClearLocalStorageButton';
 function ButtonDisplay() {
     const [isNSFWChecked, setisNSFWChecked] = useState(false);
     const [isHistoryChecked, setisHistoryChecked] = useState(false);
-    const [SFWHistory, setSFWHistory] = useState("History: \n");
-    const [NSFWHistory, setNSFWHistory] = useState("History: \n");
+    const [SFWHistory, setSFWHistory] = useState("SFW History: \n");
+    const [NSFWHistory, setNSFWHistory] = useState("NSFW History: \n");
     const SFWFile = "sfw";
     const NSFWFile = "nsfw";
 

@@ -29,7 +29,7 @@ const ReadFileAndNavigateToRandomSub = (buttonText: string) => {
     const handleInsertSubredditToHistory = (text: string, file: string) => {
         const saved = localStorage.getItem(file);
         const savedTexts = saved ? JSON.parse(saved) : [];
-        const newSavedTexts = [`[${new Date().toLocaleTimeString()}] ${text}` + "\n", ...savedTexts];
+        const newSavedTexts = [`[${new Date().toLocaleTimeString()}] ${text}` + "\n", ...savedTexts].toString().replace(/,/g, '');
         localStorage.setItem(file, JSON.stringify(newSavedTexts));
         console.log("new saved text = " + newSavedTexts);
     };
